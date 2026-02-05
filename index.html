@@ -1,110 +1,66 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="los mejores fertilizantes del mundo">
-        <title>Proyecto Fertilizante</title>
+        <meta name="description" content="cambia el color del fondo">
+        <title>ChangeColor</title>
         <link href="CSS/style.css" rel="stylesheet" type="text/css">
-    </head>
-    
-    <body>
-        <header>                                <!-- inicio del header -->
-            <div id="logobar">
-                <a href="index.html"><img src="img/Logo.PNG" alt="logotipo" width="150"></a></div>
-            <div id="navbar">
-                <div id="promociones"><p>ENVIO GRATIS EN TODOS NUESTROS PRODUCTOS</p></div>
-                <div id="botonera">
-                    <a href="fertilizantes.html">Fertilizantes</a>
-                    <a href="abonos.html">Abonos</a>
-                    <a href="historia.html">Historia</a>
-                    <a href="contacto.html">Contacto</a>
-                    <a href="control.html">Control de plagas</a>
-                </div>
-            </div>
-        </header>
         
-        <div class="header2"></div>
-        
-        <div class="divencabezado">
-            <div class="marcoazule">
-                <div class="encabezado"> <fp>Bienvenidos a FER - TILIZANTES <br/> contamos con los mejores productos del mercado</fp>   
-                </div> 
-            </div> 
-        </div>
-        
-        <div class="div2"> 
+        <script>
+        function CambiarColor(colorseleccionado,aidi){
+            var elem = document.getElementById("colorvar");
+            elem.style.backgroundColor = colorseleccionado;
             
-            <div class="marcoazul">
-                <div class="div2h">
-                    <div class="fix"> <div class="marcoverde"><img src="img/organic.png" alt="organic" ></div></div>
-                    <div class="fix"> <div class="marcoverde"><t1> PRODUCTOS <BR/> 100% ORGANICOS <br/> 100% MEXICANOS </t1></div></div>
-                    
+            
+            
+            var elem = document.getElementById("color1");
+            elem.style.border = "none";
+            var elem = document.getElementById("color2");
+            elem.style.border = "none";
+            var elem = document.getElementById("color3");
+            elem.style.border = "none";
+            var elem = document.getElementById("color4");
+            elem.style.border = "none";
+            var elem = document.getElementById("color5");
+            elem.style.border = "none";
+            var elem = document.getElementById("color6");
+            elem.style.border = "none";
+            var elem2 = document.getElementById("reset");
+            elem2.style.visibility = "visible";
+            
+            if (aidi == 'reset'){
+                var elem2 = document.getElementById(aidi);
+                elem2.style.visibility = "hidden";
+            }
+            else{
+                var elem2 = document.getElementById(aidi);
+                elem2.style.border = "thick solid";  
+            }
+            
+        }
+        </script>
+    </head>
+
+    <body>
+        <header>
+        <p>selecciona el recuadro y cambia el  <span class="fancy">color</span></p>
+        </header>
+        <div class="main"> 
+            <div class="cprincipal">
+                <div class="cselector">
+                    <button class ="cmuestra" type="button" id="color1" onclick="CambiarColor('#8ECAE6','color1')"></button>
+                    <button class ="cmuestra" type="button" id="color2" onclick="CambiarColor('#2193BC','color2')" ></button>
+                    <button class ="cmuestra" type="button" id="color3" onclick="CambiarColor('#023047','color3')"></button>
+                    <button class ="cmuestra" type="button" id="color4" onclick="CambiarColor('#FFB703','color4')"></button>
+                    <button class ="cmuestra" type="button" id="color5" onclick="CambiarColor('#FB8500','color5')"></button>
+                    <button class ="cmuestra" type="button" id="color6" onclick="CambiarColor('#E76F51','color6')"></button>
                 </div>
-            </div>
-
-        </div> 
-
-
-        <div class="div2">
-            <div class="marcoazul"><div class="marcoverde"><img src="img/slider.png" alt="logotipo" class="center" ></div></div>
+                <div class="ccambio">
+                    <div id="colorvar">
+                    <button id = "reset" type="button" id="reset" onclick="CambiarColor('aliceblue','reset')"> <img src="img/resetimage.png" width="100%"> </button>
+                    </div>
+                </div>
         </div>
-        <div class="divproductos">
-            <div class="marcoazule">
-                <div class="productos">
-
-                    <div class="producto">
-                        <div class="marcoespecial">
-                            <div class="imagen"><img src="img/costal-50-kg.jpg" alt="insta"></div>
-                        </div>
-                        <div class="productoboton"><v>Fertilizantes</v></div>
-                    </div>
-                    <div class="producto">
-                        <div class="marcoespecial">
-                            <div class="imagen"><img src="img/abono.png" alt="abono" ></div>
-                        </div>
-                        <div class="productoboton"><v>Abono</v> </div>
-                    </div>
-                    <div class="producto">
-                        <div class="marcoespecial">
-                            <div class="imagen"><img src="img/control-de-plagas.png" alt="insta"></div>
-                        </div>
-                        <div class="productoboton"> <v>Control de plagas</v> </div>
-                    </div>
-                    <div class="producto">
-                        <div class="marcoespecial"></div>
-                        <div class="productoboton"><v></v></div>
-                    </div>
-                    <div class="producto">
-                        <div class="marcoespecial">imagen5</div>
-                        <div class="productoboton">mas informacion5</div>
-                    </div>
-                    <div class="producto">
-                        <div class="marcoespecial">imagen6</div>
-                        <div class="productoboton">mas informacion6</div>
-                    </div>
-                </div>
-            </div>
         </div>
-        
-        <footer>
-            <div class="legales">legales</div>
-            <div class="contacto">Copyright© 1999-2023 Fer Coss <br/> Todos los derechos reservados<br/> Av. Luis Donaldo Colosio 416, Villa Satelite, Hermosillo Sonora</div>
-            <div class="redes">
-                <div class="redes2">
-                    <div class="circulo"><a href="https://www.facebook.com/" target="_blank"><img src="img/face.png" alt="insta" height="50"></a></div>
-                    <div class="redestext">Facebook</div>
-                </div>
-                <div class="redes2">
-                    <div class="circulo"><a href="https://www.instagram.com/" target="_blank"><img src="img/insta.png" alt="insta" height="50"></a></div>
-                    <div class="redestext">Instagram</div>
-                </div>
-                <div class="redes2">
-                    <div class="circulo"><a href="https://web.whatsapp.com/" target="_blank"><img src="img/whatsapp.png" alt="insta" height="50"></a></div>
-                    <div class="redestext">Whatsapp</div>
-                </div>
-            </div>
-        </footer>
     </body>
-    
-    
 </html>
