@@ -1,66 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script defer src="funciones.js"></script>
         <meta charset="utf-8">
-        <meta name="description" content="cambia el color del fondo">
-        <title>ChangeColor</title>
+        <meta name="description" content="Coss y Leon Obra">
+        <title>Coss y Leon Obra</title>
         <link href="CSS/style.css" rel="stylesheet" type="text/css">
-        
-        <script>
-        function CambiarColor(colorseleccionado,aidi){
-            var elem = document.getElementById("colorvar");
-            elem.style.backgroundColor = colorseleccionado;
-            
-            
-            
-            var elem = document.getElementById("color1");
-            elem.style.border = "none";
-            var elem = document.getElementById("color2");
-            elem.style.border = "none";
-            var elem = document.getElementById("color3");
-            elem.style.border = "none";
-            var elem = document.getElementById("color4");
-            elem.style.border = "none";
-            var elem = document.getElementById("color5");
-            elem.style.border = "none";
-            var elem = document.getElementById("color6");
-            elem.style.border = "none";
-            var elem2 = document.getElementById("reset");
-            elem2.style.visibility = "visible";
-            
-            if (aidi == 'reset'){
-                var elem2 = document.getElementById(aidi);
-                elem2.style.visibility = "hidden";
-            }
-            else{
-                var elem2 = document.getElementById(aidi);
-                elem2.style.border = "thick solid";  
-            }
-            
-        }
-        </script>
     </head>
 
     <body>
         <header>
-        <p>selecciona el recuadro y cambia el  <span class="fancy">color</span></p>
-        </header>
-        <div class="main"> 
-            <div class="cprincipal">
-                <div class="cselector">
-                    <button class ="cmuestra" type="button" id="color1" onclick="CambiarColor('#8ECAE6','color1')"></button>
-                    <button class ="cmuestra" type="button" id="color2" onclick="CambiarColor('#2193BC','color2')" ></button>
-                    <button class ="cmuestra" type="button" id="color3" onclick="CambiarColor('#023047','color3')"></button>
-                    <button class ="cmuestra" type="button" id="color4" onclick="CambiarColor('#FFB703','color4')"></button>
-                    <button class ="cmuestra" type="button" id="color5" onclick="CambiarColor('#FB8500','color5')"></button>
-                    <button class ="cmuestra" type="button" id="color6" onclick="CambiarColor('#E76F51','color6')"></button>
+            <div id="logo">
+                <a href="index.html"><img src="img/NO_BACKGROUND_HD_Logo_CossyLeon.png.png" alt="logotipo" width="180"></a>
+            </div>
+                <div id="botonera">
+                    <a class="b" href="index.html">Inicio</a>
+                    <a class="b"href="nosotros.html">Nosotros</a>
+                    <a class="b" href="servicios.html">Servicios</a>
+                    <a class="b"  href="obras.html">Obras</a>
+                    <a class="b" href="contacto.html">Contacto</a>
                 </div>
-                <div class="ccambio">
-                    <div id="colorvar">
-                    <button id = "reset" type="button" id="reset" onclick="CambiarColor('aliceblue','reset')"> <img src="img/resetimage.png" width="100%"> </button>
+        </header>
+        
+        <div class="main">
+            <div class="sliderdiv">
+            <div class="sliderdivaux">
+                <section id="container-slider">	
+                   <a href="javascript: funcionEjecutar('anterior');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+                   <a href="javascript: funcionEjecutar('siguiente');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+                   <ul class="listslider">
+                     <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+                     <li><a itlist="itList_1" href="#"></a></li>
+                     <li><a itlist="itList_2" href="#"></a></li>
+                   </ul>
+                   <ul id="slider">
+                     <li style="background-image: url('img/construccion1.png'); z-index:0; opacity: 1;top:100px">
+                       <div class="content_slider" >
+                         <div>
+                           <h2>SOMOS EXPERTOS EN CONSTRUCCION</h2>
+                       <p></p>
+                       
+                     </div>
+                       </div>
+                     </li>
+                     <li style="background-image: url('img/construccion2.png'); ">
+                       <div class="content_slider" >
+                         <div>
+                           <h2>SOMOS EXPERTOS EN CONSTRUCCION</h2>
+                       <p></p>
+                       
+                     </div>
+                       </div>
+                     </li>
+                     <li style="background-image: url('img/construccion3.png'); ">
+                       <div class="content_slider" >
+                         <div>
+                           <h2>SOMOS EXPERTOS EN CONSTRUCCION</h2>
+                       <p></p>
+                       
+                     </div>
+                       </div>
+                     </li>
+                  </ul>
+                </section>
+            </div>    
+            </div>
+            <div class="seccion2"> 
+                <div class="cprincipal">
+                    <div><h1>SOMOS EXPERTOS EN CONSTRUCCION</h1>
+                    <h2>La obra la realizamos siguiendo las normas de seguridad vigentes, seguridad social para todos los trabajadores y con calidad</h2></div> 
+                    <img src="img/JOSUE.png" alt="logotipo" width="300">
+                    <div>
                     </div>
                 </div>
+                <div class="cprincipal2">
+                    <div><h3>ARTPARK</h3>
+                    </div> 
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.381189080527!2d-103.3926895240067!3d20.735338397790454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428af4094e3425d%3A0x44769fd9572acddd!2sART%20PARK%20Bosque%20Urbano%20Vertical!5e0!3m2!1sen!2smx!4v1696102417186!5m2!1sen!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        </div>
+        <footer>
+            <div id="botoneraf">
+                <a  href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a   href="servicios.html">Servicios</a>
+                <a   href="obras.html">Obras</a>
+                <a   href="contacto.html">Contacto</a>
+            </div>
+            <div class="contacto">
+                <h1>Contáctanos</h1>
+                <div class="iconos">
+                    <div><a href="https://www.facebook.com/profile.php?id=100054648195806" target="_blank"><img src="img/phoneicon.png" alt="phoneicon" height="50"></a>
+                    </div>
+                    <h4> 3323859053</h4>
+                </div>
+                <div class="iconos">
+                    <a href="https://www.facebook.com/profile.php?id=100054648195806" target="_blank"><img src="img/mailicon.png" alt="phoneicon" height="50"></a>
+                    <br/><h4>arquitectura@cossyleonobra.com</h4>
+                </div>
+            </div>
+
+            <div >
+                <h1>Siguenos en nuestras redes</h1>
+                <div id="redes">
+                    <a href="https://www.facebook.com/profile.php?id=100054648195806" target="_blank"><img src="img/face.png" alt="facebook icon" height="50"></a>
+                    <a href="https://instagram.com/cossobra?igshid=MWZjMTM2ODFkZg==" target="_blank"><img src="img/insta.png" alt="insta" height="50"></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="img/whatsapp.png" alt="insta" height="50"></a>
+                </div>
+            </div>
+            <div id="logoinverted">
+                <a href="index.html"><img src="img/INVERTED_NO_BACKGROUND_HD_Logo_CossyLeon.png" alt="logotipo" width="300"></a>
+                <p>Copyright © 2023 Coss y León Obra<br/>Todos los derechos reservados.</p>
+            </div>
+        </footer>
     </body>
 </html>
