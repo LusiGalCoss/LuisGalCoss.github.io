@@ -1,57 +1,159 @@
-*{
-    margin: 0;
-    padding: 0;
+body {
+
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+background: rgb(38,70,83)
+}
+
+p {
+  font-size: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+}
+
+.fancy {
+  position: relative;
+  white-space: nowrap;
+  &:after {
+    --deco-height: 0.3125em;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: calc(var(--deco-height) * -0.625);
+    height: var(--deco-height);
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-size: auto 100%;
+    background-repeat: round;
+    background-position: 0em;
+  }
+}
+header{
+    background-color: rgb(231,111,81);
+    width: 100%;
+    height: auto;
+    color: black;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 200%;
     box-sizing: border-box;
+    padding: 5px;
+    text-shadow: 1px 1px 4px 100 black;
+    border: dashed;
+    border-color: black;
 }
-
-nav{
-    background-color: lightslategray;
-    min-height: 10vh;
-    display: grid;
-    grid-template-columns: 10% 1fr 1fr 10%;
-    align-items: center;
-}
-
-#logo{
-    font-size: 2rem;
-    color: ghostwhite;
-    grid-column: 2/3;
-}
-
-.menu{
-    justify-self: end;
-}
-section{
+.main{
+    width: 100%;
+    height: 76vh;
+    background-color: rgb(38,70,83);
     display: flex;
-    height: 80vh;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
 }
-
-.slider{
+.cprincipal{
+    background-color: rgb(42,157,143);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    
+    box-sizing: border-box;
+    padding: 3%;
+    border-radius: 45px;
+    box-shadow: 0px 0px 15px 1px black;
+    
+    
+    
+    
+}
+.cselector{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2%;
+    padding: 2%;
 }
-.slider img{
+.ccambio{
+    position: relative;
+    float: left;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.headline{
-    font-family: sans-serif;
-    font-size: 4.5rem;
-    position: absolute;
-    bottom: 10%;
-    left: 10%
+    height: 80%;
+    margin-top: 2%;
+    padding: 4%;
+    box-sizing: border-box;
     
 }
-.back{
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(0deg, rgba(226,105,105,1) 0%, rgba(162,162,162,1) 100%);
+.cselector,.ccambio{
+    background-color: rgb(233,196,106);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px 1px black;
+    border-radius: 25px;
     
+    
+}
+
+.cmuestra{
+    background-color: rgb(244,162,97);
+    position: relative;
+    float: left;
+    width: 16.66%;
+    height: 100%;
+    
+    box-sizing: border-box;
+    padding: 2%;
+    border-radius: 16px;
+    margin: 2%;
+    box-shadow: inset 0px 0px 10px 0.5px black;
+    
+    border: none;
+}
+#colorvar{
+    box-shadow: inset 0px 0px 10px 0.5px black;
+    width: 100%;
+    height: 100%;
+    box-sizing: content-box;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+#reset{
+    width: 10%;
+    height: 18%;
+    position: absolute;
+    bottom: 9%;
+    right: 5%;
+    border-radius: 30px;
+    border: none;
+    background-color: lightgray;
+    opacity: 75%;
+    visibility: hidden;
+}
+#color1{
+    background-color: rgb(142,202,230);
+}
+#color2{
+    background-color: rgb(33,158,188);
+}
+#color3{
+    background-color: rgb(2,48,71);
+}
+#color4{
+    background-color: rgb(255,183,3);
+}
+#color5{
+    background-color: rgb(251,133,0);
+}
+#color6{
+    background-color: rgb(231,111,81);
+}
+#colorvar{
+    background-color: ;
 }

@@ -1,47 +1,66 @@
-<!Doctype html>
-
-<html>
-    
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        
-        <title>Animacion Timeline</title>
-        <meta charset="utf-8" >
-        <meta name="descripcion" content="meta o palabras clave">
-        <meta name="viewport" content="width = device-width">
+        <meta charset="utf-8">
+        <meta name="description" content="cambia el color del fondo">
+        <title>ChangeColor</title>
         <link href="CSS/style.css" rel="stylesheet" type="text/css">
-        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
         
-        
-      
-    </head>
-    
-    <body>
-        
-        <header>
-            <nav>
-                <h3 id="logo" > Timeline </h3>
-                <img class="menu" src="img/icons8-menu.svg">
-            </nav>
-            <section>
-                <div class="slider">
-                    
-                    <img src="img/02.jpg" height="100%" width="100%" >
-                    <h1 class="headline">ola k ase</h1>
-                </div>
-            </section>
-        </header>
-        
-        <div class= "back">
+        <script>
+        function CambiarColor(colorseleccionado,aidi){
+            var elem = document.getElementById("colorvar");
+            elem.style.backgroundColor = colorseleccionado;
             
+            
+            
+            var elem = document.getElementById("color1");
+            elem.style.border = "none";
+            var elem = document.getElementById("color2");
+            elem.style.border = "none";
+            var elem = document.getElementById("color3");
+            elem.style.border = "none";
+            var elem = document.getElementById("color4");
+            elem.style.border = "none";
+            var elem = document.getElementById("color5");
+            elem.style.border = "none";
+            var elem = document.getElementById("color6");
+            elem.style.border = "none";
+            var elem2 = document.getElementById("reset");
+            elem2.style.visibility = "visible";
+            
+            if (aidi == 'reset'){
+                var elem2 = document.getElementById(aidi);
+                elem2.style.visibility = "hidden";
+            }
+            else{
+                var elem2 = document.getElementById(aidi);
+                elem2.style.border = "thick solid";  
+            }
+            
+        }
+        </script>
+    </head>
+
+    <body>
+        <header>
+        <p>selecciona el recuadro y cambia el  <span class="fancy">color</span></p>
+        </header>
+        <div class="main"> 
+            <div class="cprincipal">
+                <div class="cselector">
+                    <button class ="cmuestra" type="button" id="color1" onclick="CambiarColor('#8ECAE6','color1')"></button>
+                    <button class ="cmuestra" type="button" id="color2" onclick="CambiarColor('#2193BC','color2')" ></button>
+                    <button class ="cmuestra" type="button" id="color3" onclick="CambiarColor('#023047','color3')"></button>
+                    <button class ="cmuestra" type="button" id="color4" onclick="CambiarColor('#FFB703','color4')"></button>
+                    <button class ="cmuestra" type="button" id="color5" onclick="CambiarColor('#FB8500','color5')"></button>
+                    <button class ="cmuestra" type="button" id="color6" onclick="CambiarColor('#E76F51','color6')"></button>
+                </div>
+                <div class="ccambio">
+                    <div id="colorvar">
+                    <button id = "reset" type="button" id="reset" onclick="CambiarColor('aliceblue','reset')"> <img src="img/resetimage.png" width="100%"> </button>
+                    </div>
+                </div>
         </div>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        
-    <!-- codigo para enlazar archivo de java -->
-        <script src="js/script.js"></script>
-        
-        </body>
-    
+        </div>
+    </body>
 </html>
