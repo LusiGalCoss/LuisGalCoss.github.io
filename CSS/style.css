@@ -1,137 +1,467 @@
 /* INICIO DE ESTILO */
-header {width:100%; height: 100px; background-color: forestgreen;}
-#brand{
-    width: 25%;
-    height: 100px;
-    background-color: greenyellow;
-    position: relative
+.contenedorprincipal{
+    position: relative;
     float: left;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+body{
+    font-family: 'Lato', sans-serif; 
+    background-color: #506266;
+    position: relative;
+}
+header {
+    z-index: 1;
+    width:99%; 
+    height: 20vh; 
+    background-color: 10454F;
+    position: fixed;
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px 10px;
+    top:1;
+    
+}
+.header2 {
+    z-index: 0;
+    width:100%; 
+    height: 20vh; 
+    background-color: #;
+    border-radius: 50px;
+    
+    
+}
+#logobar{
+    position: relative;
+    float: left;
+    width: 9%;
+    height: 20vh;
+    background-color: #10454F;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1%
 }
 #navbar{
-    width: 75%;
-    height: 100px;
-    background-color: darkgreen;
-    position: relative;
-    top:10%;
-    left: 25%;
-    top: -100px;
-}
-p{
-    font-size: 24px; 
-    color: darkgray;
-}
-.titulo{
-    font-size: 48px; 
-    color: blue;
-}
-.c1,.c2,.c3{
-    width: 100%;
-    height: 60vh;
-    background-color:deeppink;
-    overflow: hidden;
-}
-
-.c2 {
-    background-color: darkviolet
-}
-.c3 {
-    background-color: deepskyblue;
+    height: 20vh;
+    width: 90%;
+    background-color:#10454F;
     display: flex;
-    flex-flow: row; 
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom-right-radius: 50px;
+    
 }
-.c2a,.c2b,.c2c{
-    width: 33%;
-    height: 60vh;
+#promociones{
+    height: 25%;
+    background-color: #BDE038;
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 40px 10px; 
+    box-shadow: 10px 10px 5px 2px #506266;
+}
+#botonera{
+    height: 75%;
+    background-color: #10454F;
     position: relative;
-    float: left
-}
-.c2b{
-    background-color: cornflowerblue
-}
-.c2c{
-    background-color: skyblue;
-    width: 34%
-}
-.c3a,.c3b{
-    width: 50%;
-    height: 60vh;
-    position: relative;
-    float: left
-}
-
-.c3a{
-    background-color: aquamarine;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: row-reverse;
     justify-content: space-around;
-    align-items: stretch;
+    align-items: center;
+    margin: %
+    
 }
-.item{
-    width: 500px;
-    height: 200px;
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 8px
 }
-.redes{
-    width: 80px;
-    height: 80px;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    background-color: forestgreen;
-    z-index: 4;
+li{
+    display: inline;
+    padding: 20px
+}
+.divencabezado,.divstore{
+    position: relative;
+    float: left;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divstore{
+    height: 100%;
+}
+.encabezado{
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/frase.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+
+}
+
+.div2,.div23,.div27{
+    height: 90%;
+    width: 50%;
+    position: relative;
+    float:left;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.div27{
+    width: 70%
+}
+.div23{
+    width: 30%;
+}
+.div2h,.div2h3,.div2h7{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.div2h7{
+    height: 70%
+}
+.div2h3{
+    height: 30%;
+}
+.formulario{
+    flex-flow: row;
+    height: 80vh;
+    padding: 50px;
+}
+.mapa{
+    flex-flow: column;
+}
+
+.imagen1{
+    background-color: #506266;
+    height: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+.texto1{
+    background-color: #506266;
+    height: 20%;
+    text-align: center;
+    font-family:tahoma;
+    font-size: 2rem;
+    color: aquamarine;
+    text-shadow: 2px 2px 20px green;
+    box-sizing:border-box;
+    
 }
 footer{
     position: relative;
+    float: left;
     width: 100%;
     height: 300px;
-    background-color: coral;
 }
-.fbrand{
+.legales,.contacto,.redes{
     position: relative;
     float: left;
-    width: 20%;
-    height: 250px;
-    background-color: burlywood;
-    padding: 30px;
+    width: 33%;
+    height: 100px;
+    background-color: #BDE038;
     box-sizing: border-box;
-}
-.fmenu{
-    position: relative;
-    float: left;
-    width: 80%;
-    height: 250px;
-    background-color: chocolate;
-    padding: 30px;
-    box-sizing: border-box;
-}
-.legales{
-    clear: both;
-    width: 100%;
-    height: 50px;
-    background-color: darkgoldenrod
-}
-ul,ol{
-    list-style-type: none; 
-    padding: 0px; 
-    margin: 0px;
-}
-table{
-    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+        font-family:tahoma;
     font-size: 1rem;
-    color: black;
-    text-align: left;
 }
-td{
-    vertical-align: top;
+.contacto{
+    color: black;
+    text-align: center;
+}
+.redes{
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+.redes2{
+    position: relative;
+    float: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo {
+    background: lightblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.center {
+    display: flex;
+    align-items:center;
+}
+
+.divproductos{
+    position: relative;
+    float: left;
+    width: 100%;
+    background-color: #506266;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productos{
+    position: relative;
+    float: left;
+    height: 90vh;
+    width: 100%;
+}
+.producto{
+    position: relative;
+    float: left;
+    height: 45vh;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.latest{
+    width: 90%;
+    
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    
     
 }
-li{
-    padding: 10px 0px 0px 10px;
+.marcoespecial{
+    height: 50%;
+    width: 35%;
+    position: relative;
+    float: left;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 50px 5px;
+    border-radius: 25px;
+    padding: 5%;
+    background-color: #BDE038
 }
-th{
-    border-bottom: 1px solid gray;
-    padding: 0px 0px 5px 10px;
+
+.marcoazul,.marcoverde,.marcoazule{
+    height: 90%;
+    width: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px 2px;
+    border-radius: 25px;
+    justify-content: space-around;
 }
-td a{
-    color: black;
+.marcoazul,.marcoazule{
+    background-color: #10454F;
+}
+.marcoazule{
+    width: 95%;
+    flex-direction: column;
+    
+}
+.marcoverde{
+    background-color: #BDE038;
+}
+.marcoverde img{
+    height: 90%;
+    width: 90%;
+    border-radius: 25px;
+}
+.imagen{
+    position: relative;
+    float: left;
+    border-radius: 25px;
+}
+.imagen img{
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.formulario2{
+    background-color: #BDE038;
+    box-shadow: 0px 0px 50px 5px;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+input{
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+}
+input[type=radio], input[type=checkbox]{
+
+    background-color: #BDE038;
+    border-radius: 25px;
+    margin: 5px;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+
+}
+textarea{
+    background-color: aliceblue;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 5px;
+}
+label{
+    color: #506266;
+    font-family: 'Lato', sans-serif; 
+    background-color: #BDE038;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 5px;
+}
+.campos{
+    background-color: aliceblue;
+}
+.centrado{
+    position: relative;
+    float: left;
+    text-align: center;
+    position: relative;
+    color: #ffffff; 
+    font-family: 'Lato', sans-serif; 
+    font-size: 25px; 
+}
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+.formulario{
+    
+}
+
+
+header a{
+    text-align: center;
+    position: relative;
+    float: left;
+    height: auto;
+    width: auto;
+    color: #506266;  
+    font-size: 1.5em;
+    text-decoration: none;
+    background-color: #10454F;
+    border-radius:10px;
+    padding: 15px;
+    border: solid 5px;
+    border-radius: 40px 10px;
+    background: #BDE038;
+    box-shadow: black;
+    
+}
+.fix{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.full{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.loose
+{
+    position: relative;
+    float: left;
+    width: ;
+    height:;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%
+}
+
+fp{
+    color: #ffffff; 
+    font-family: 'Lato', sans-serif; 
+    font-size: 54px; 
+    font-weight: 300; 
+    line-height: 58px; 
+    font-style: italic;
+    text-align: center;
+    text-shadow: 8px 9px 5px black;
+}
+p{
+    text-align: center;
+    font-family:tahoma;
+    font-size: 1.5rem;
+    color: #506266;
+    text-shadow: 0px 0px 8px white;
+}
+v{
+    text-align: center;
+    position: relative;
+    float: left;
+    height: auto;
+    width: auto;
+    color: #506266;  
+    text-decoration: none;
+    padding: 15px;
+    border: solid 5px;
+    border-radius: 40px 10px;
+    background: #BDE038;
+}
+t1{
+    text-align: center;
+    position: relative;
+    float: left;
+    height: auto;
+    width: auto;
+    color: #506266;
+    font-size: 48;
 }
